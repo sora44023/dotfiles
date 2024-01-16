@@ -12,6 +12,7 @@ config.font = wezterm.font("PlemolJP Console NF")
 
 -- colors
 config.color_scheme = "Ayu Mirage"
+-- config.color_scheme = 'iceberg-dark'
 -- 透明度
 -- config.window_background_opacity = 0.93
 
@@ -24,6 +25,8 @@ config.window_frame = {
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
     -- We are running on Windows; maybe we emit different
     -- key assignments here?
+    config.default_prog = { 'powershell.exe' }
+    config.font_size = 14.0
 elseif wezterm.target_triple == 'x86_64-apple-darwin' then
     -- We are running on Windows; maybe we emit different
     -- key assignments here?
