@@ -1,7 +1,9 @@
-vim.opt.smartindent = true
-vim.opt.autoindent = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.number = true
+local opt = vim.opt
+
+opt.smartindent = true
+opt.autoindent = true
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.number = true
 vim.cmd.colorscheme("habamax")
-vim.opt.clipboard = "unnamedplus"
+opt.clipboard = "unnamedplus"
